@@ -1,10 +1,10 @@
-#TODO From Doc
-##Goal
+# TODO From Doc
+## Goal
 App scans a document to certain keyword or markup and populates a to-do list. Complete with alerts.
 
 Could be useful for writers or coders where you want to get back to something, but have a hard time remembering all those unfinished ideas. Sure you could use the find feature, but this lets you see everything all in one place.
 
-##Features
+## Features
 - Live doc link can update your to-do list on the fly as you write.
 - Maybe app opens when you open the doc?? No idea how to do this.
 - You don't upload a file, the app connects to it with a file path.
@@ -15,7 +15,7 @@ Could be useful for writers or coders where you want to get back to something, b
     - Or for the time being, it's all localized.
 - Make changes to the notes in the app and they update in your doc. 
 
-##MVP HTML
+## MVP HTML
 - Menu
     - Link another document
         - File path
@@ -32,7 +32,7 @@ Could be useful for writers or coders where you want to get back to something, b
         - Reference to line number(s)?
         - Complete toggle
 
-##HTML
+## HTML
 - Menu
     - Link another document
         - File path
