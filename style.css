@@ -1,85 +1,79 @@
 body {
-    background-color: grey;
+    font-family: sans-serif;
     display: flex;
-    justify-content: center;
-    font-family: 'Open Sans', 'Helvetica Neue', sans-serif
-}
-#container {
-    display: flex;
-    margin: 10px;
-    padding: 10px 20px;
-    background-color: whitesmoke;
-    border-radius: 10px;
-    max-height: 400px;
-    max-width: 700px;
     flex-direction: column;
 }
 
-#players {
-    flex-direction: row;
-}
-
-#rollResults {
-    flex-direction: row;
-}
-
-.btn {
-    padding: 10px;
-    border-radius: 10px;
-    border-width: 2px;
-    border-color: black;
-    border-style: solid;
-}
-
-.btn, #rollBtn {
-    background-color: rgb(0, 175, 0);
+h1 {
     color: white;
-    font-weight: 800;
-    font-size: larger;
-    border-width: 0px;
 }
 
-#rollBtn:hover {
-    background-color: rgb(72, 179, 72);
-}
-
-#rollBtn:active {
-    background-color: darkgreen;
-}
-
-#players {
-    display:flex;
-    flex-direction: row;
-}
-
-.player {
-    padding: 5px;
-    border-style: solid;
-    border-color:grey;
-    border-width: 1px;
-    border-radius:5px;
-    margin: 5px;
-}
-
-#rollResults {
+nav {
+    background-color: darkslategray;
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    flex-wrap: wrap;
-    background-color:lightgray;
-    border: 3px solid grey;
-    padding: 5px;
-    border-radius: 10px;
 }
 
-.rollResult {
-    display:flex;
-    margin: 5px;
-    border: 1px solid black;
-    border-radius: 10px;
-    padding: 10px;
-    width: 20px;
-    height: 20px;
-    justify-content: center;
-    background-color: white;
+header {
+    margin-bottom: 1em;
 }
+
+nav .headerTxt {
+    margin-left:40px;
+}
+
+nav .menuBtn {
+    margin-left: auto;
+    padding: 1em;
+}
+
+aside {
+    justify-content: right;
+    background-color: #b8b8b8;
+}
+
+form {
+    padding: 10px;
+}
+
+#mainList {
+    display: flex;
+    flex-direction: column;
+
+}
+
+#headerItem {
+    display: flex;
+    background-color: gray;
+    border-radius: 10px 10px 0px 0px;
+    align-items: center;
+}
+
+#headerItem h2 {
+    color: white;
+}
+
+#headerItem #buttons {
+    display: flex;
+    margin-left: auto;
+}
+
+#listContent {
+    display: flex;
+    flex-direction: column;
+}
+
+.listItem {
+    display: flex;
+    border: 1px solid grey;
+    align-items: center;
+    padding: 10px;
+    padding-left: 30px;
+}
+
+.listItem .lineNumber {
+    color: grey;
+    font-size: 0.7em;
+    margin: 10px;
+}
+

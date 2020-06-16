@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1 class="headerTxt">TodoDoc</h1>
+            <button class="menuBtn" id="menuBtn">CONNECT</button>
+        </nav>
+        <aside style="display: flex" id="menu">
+            <label for="fileInput">Connect a document: </label>
+            <!--<input type="file" name="fileInput" id="fileInput">-->
+            <input id="fileInput" type="file" onchange="readFile(this)">
+            <label for="keywordIn">Keyword: </label>
+            <input type="text" name="keywordIn" size="20">
+            <input type="button" value="Connect" id="connectBtn" onclick="createList()">
+        </aside>
+    </header>
+    <div id="mainList">
+        <div id="headerItem">
+            <button id="collapse">^</button>
+            <h2>Document One</h2>
+            <div id="buttons">
+                <button>@</button>
+                <button>*</button>
+                <button>X</button>
+            </div>
+        </div>
+        <div id="listContent">
+            <div id="listItem1" class="listItem">
+                <input type="checkbox" name="complete" class="completeBox">
+                <p class="lineNumber">23</p>
+                <p class="listNote">Here's the first note.</p>
+                
+            </div>
+            <div id="listItem2" class="listItem">
+                <input type="checkbox" name="complete" class="completeBox">
+                <p class="lineNumber">23</p>
+                <p class="listNote">Here's the first note.</p>
+                
+            </div>
+            <div id="listItem3" class="listItem">
+                <input type="checkbox" name="complete" class="completeBox">
+                <p class="lineNumber">23</p>
+                <p class="listNote">Here's the first note.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
