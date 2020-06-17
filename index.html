@@ -11,7 +11,6 @@
     <header>
         <nav>
             <h1 class="headerTxt">TodoDoc</h1>
-            <button class="menuBtn" id="menuBtn">CONNECT</button>
         </nav>
         <aside style="display: flex" id="menu">
             <label for="fileInput">Connect a document: </label>
@@ -19,12 +18,12 @@
             <input id="fileInput" type="file" onchange="readFile(this)">
             <label for="keywordIn">Keyword: </label>
             <input type="text" name="keywordIn" size="20">
-            <input type="button" value="Connect" id="connectBtn" onclick="createList()">
+            <input type="button" value="Connect" id="connectBtn" onclick="createList('listContent')">
         </aside>
     </header>
     <div id="mainList">
         <div id="headerItem">
-            <button id="collapse">^</button>
+            <button id="collapse" onclick="toggleDisplay('listContent')">^</button>
             <h2>Document One</h2>
             <div id="buttons">
                 <button>@</button>
@@ -33,23 +32,7 @@
             </div>
         </div>
         <div id="listContent">
-            <div id="listItem1" class="listItem">
-                <input type="checkbox" name="complete" class="completeBox">
-                <p class="lineNumber">23</p>
-                <p class="listNote">Here's the first note.</p>
-                
-            </div>
-            <div id="listItem2" class="listItem">
-                <input type="checkbox" name="complete" class="completeBox">
-                <p class="lineNumber">23</p>
-                <p class="listNote">Here's the first note.</p>
-                
-            </div>
-            <div id="listItem3" class="listItem">
-                <input type="checkbox" name="complete" class="completeBox">
-                <p class="lineNumber">23</p>
-                <p class="listNote">Here's the first note.</p>
-            </div>
+            <!--List goes here...-->
         </div>
     </div>
 </body>
